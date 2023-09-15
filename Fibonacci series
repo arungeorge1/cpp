@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+void fib(int x)
+{
+    int i,f1=0,f2=1,nt;
+    for(i=1;i<=x;i++)
+    {
+        cout<<f1<<"\n";
+        nt=f1+f2;
+        f1=f2;
+        f2=nt;
+    }
+    return;
+}
+int main()
+{
+    int i,n;
+    cout<<"Enter the number: ";
+    cin>>n;
+    fib(n);
+    return 0;
+}
